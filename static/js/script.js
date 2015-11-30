@@ -39,7 +39,14 @@ var getResults = function() {
 };
 
 $(document).ready(function() {
-
+    $('.bxslider').bxSlider({
+  minSlides: 3,
+  maxSlides: 3,
+  slideWidth: 200,
+  slideMargin: 10,
+  // ticker: true,
+  // speed: 10000
+});
 
     $("#url").keypress(function(e) {
         if (e.which == 13) {
@@ -48,6 +55,13 @@ $(document).ready(function() {
     });
 
 
+    $(".sample").click(function(){
+        var url = $(this).attr("src");
+        $("#url").val(url);
+        getResults();
+
+
+    });
 
     $("#submit_button").click(getResults);
 

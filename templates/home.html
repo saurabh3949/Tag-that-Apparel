@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Get the look - Apparel Recognizer Beta</title>
+    <title>Tag that Apparel | Clothing Recognizer Beta</title>
     <!-- Bootstrap CSS -->
     <!-- Latest compiled and minified CSS -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+    <link href="static/css/jquery.bxslider.css" rel="stylesheet" />
     <link href="static/css/bootstrap.min_yeti.css" rel="stylesheet">
     <link href="static/css/custom.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -23,7 +24,7 @@
     <nav class="navbar navbar-default navbar-inverse" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Get the look!</a>
+            <a class="navbar-brand" href="#">Tag that Apparel <sub><small>beta</small></sub></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -31,7 +32,7 @@
                 <li class="active"><a href="/">Home</a></li>
                 <li class><a href="/">How it works?</a></li>
                 <li class><a href="/">Codebase</a></li>
-                <li><a href="/about_us">About Us</a></li>
+                <li><a href="/">About Us</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -51,12 +52,32 @@
     </div>
     <div class="jumbotron">
         <div class="container text-center">
-            <h2>Tag that apparel!</h2>
-            <p>Enter an image URL or select an image from below</p>
-            <form class="form-inline" id="form_image" action="javascript:void(0);">
-                <input type="text" class="form-control" size="60" id="url" placeholder="Enter image URL">
-                <button type="button" data-loading-text="Loading..." id="submit_button" class="btn btn-danger">Go</button>
-            </form>
+            <div class="row">
+                <div class="col-md-8">
+                    <!-- <h2>Tag the clothing now!</h2> -->
+                    <br>
+                    <br>
+                    <p>Enter an image URL or select an image from right</p>
+                    <form class="form-inline" id="form_image" action="javascript:void(0);">
+                        <input type="text" class="form-control" size="60" id="url" placeholder="Enter image URL">
+                        <button type="button" data-loading-text="Loading..." id="submit_button" class="btn btn-danger">Go</button>
+                    </form>
+                    <h5 class="text-muted small">Grab image URLs from Google image search: <a target="_blank" href="https://www.google.com/search?hl=en&site=imghp&tbm=isch&source=hp&q=red%20jeans">Red jeans</a>, <a target="_blank" href="https://www.google.com/search?hl=en&site=imghp&tbm=isch&source=hp&q=blue%20blazers">Blue blazers</a>, <a target="_blank" href="https://www.google.com/search?hl=en&site=imghp&tbm=isch&source=hp&q=green%20shorts">Green shorts</a> etc.</h5>
+                </div>
+                <div class="col-md-4">
+                    <ul class="bxslider">
+                        <li><img class="sample" src="http://baggout.tiles.large.s3-ap-southeast-1.amazonaws.com/6f465ba2-9eec-4154-bcad-d074ded7be71.jpg" /></li>
+                        <li><img class="sample" src="https://s-media-cache-ak0.pinimg.com/236x/28/eb/57/28eb57848fde48a5298f71a399a6e7fb.jpg" /></li>
+                        <li><img class="sample" src="http://cdn.outblush.com/women/images/2012/05/pink-jeans-l.jpg" /></li>
+                        <li><img class="sample" src="https://s-media-cache-ak0.pinimg.com/736x/3b/c9/0f/3bc90f8d9bae21584e097cc390a80322.jpg" /></li>
+                        <li><img class="sample" src="http://learn.esu10.org/file.php/26/Water_pics/yellowhat.jpg" /></li>
+                        <li><img class="sample" src="http://mensfash.com/wp-content/uploads/2013/12/bonobos-bottle-rockets-brown-canvas-premium-denim-jeans.jpg" /></li>
+                        <li><img class="sample" src="http://www.coatpant.com/wp-content/uploads/2014/03/Ralph-Lauren-Shirts-Grey.jpg" /></li>
+                        <li><img class="sample" src="https://41.media.tumblr.com/tumblr_me3x0u1Yp61rvwreuo1_500.jpg" /></li>
+                        <li><img class="sample" src="http://in1.ccio.co/ap/DZ/dN/252412754085079117UPipBpKtc.jpg" /></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -73,7 +94,7 @@
                 <div class="panel panel-info">
                     <div class="panel-heading text-center">Image</div>
                     <div class="panel-body">
-                    <img id="image-placeholder" src="" alt="" width="100%">
+                        <img id="image-placeholder" src="" alt="" width="100%">
                     </div>
                 </div>
             </div>
@@ -128,6 +149,7 @@
     <!-- Bootstrap JavaScript -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="static/js/script.js"></script>
+    <script src="static/js/jquery.bxslider.min.js"></script>
 </body>
 
 </html>

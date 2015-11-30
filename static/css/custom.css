@@ -2,6 +2,10 @@
     margin-bottom:0;
   }
 
+.sample {
+    cursor: pointer;
+}
+
 /*.jumbotron {
     margin-bottom:0;
   }*/
