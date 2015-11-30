@@ -88,5 +88,5 @@ def test():
     return sample
 
 if __name__ == '__main__':
-    app.debug = True
-    app.run(port = 9999)
+    app.debug = False
+    app.run(port = 5000)
