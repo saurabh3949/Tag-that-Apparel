@@ -1,0 +1,47 @@
+.navbar {
+    margin-bottom:0;
+  }
+
+/*.jumbotron {
+    margin-bottom:0;
+  }*/
+
+.cml-colorbar-top-container {
+    height: 5px;
+}
+
+.cml-colorbar-top {
+    height: 5px;
+    width: 100%;
+}
+
+.progress {
+    height: 14px;
+    margin-top:3px;
+}
+
+.prediction-container {
+  width: 300px;
+  display: inline-block;
+}
+.tag-span {
+  background-color: #0a8cc4;
+  padding-left: 9px;
+  padding-right: 9px;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  font-size: 18px;
+}
+.tag-point {
+  height: 30px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.tag-point polygon {
+  fill: #0a8cc4;
+}
+#svg-point {
+  display: none;
+}
