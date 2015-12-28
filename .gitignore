@@ -1,4 +1,10 @@
+*.pyc
 data/
 deep_neural_network/
 logit_classifier/
 logit_color_classifier/
+.DS_Store
+datasets/
+*.out
+notebooks/
+static/
